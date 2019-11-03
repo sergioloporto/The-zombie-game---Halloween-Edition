@@ -1,0 +1,93 @@
+@import "partials/loginbox";
+body {
+    margin:0;
+}
+
+.zombie {
+    width: 200px;
+    height: 312px;
+    /*border: 1px solid red;*/
+    background: url("../images/walkingdead.png"); /* From https://wdrfree.com/97/css3-animation-loop-sprite-with-keyframes - couldn't find the original author for credits */
+    position: absolute;
+    left: calc(100% + 100px);
+    bottom: 20px;
+    animation: move 1s 0s infinite steps(9),
+               walk 15s 0s 1 linear forwards;
+}
+
+@keyframes move {
+    100% {
+        background-position-x: -1800px;
+    }
+}
+@keyframes walk {
+    100% {
+        left: -300px;
+    }
+}
+
+.board {
+    height:100vh;
+    min-height: 800px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(0,0,0);
+    background-image: url(../images/board-bg.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    cursor: none;
+}
+
+.cross {
+    width: 200px;
+    height: 200px;
+    border: 20px solid rgba(255,255,255,0.5);
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.cross::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: white;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.cross::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent 45%, #d00 35%, #d00 55%,  transparent 55%),
+    linear-gradient(to right, transparent 45%, #d00 35%, #d00 55%, transparent 55%);
+    position: absolute;
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    .header__container {
+        display: flex;
+        margin-top: 5px;
+    }
+}
+.level, .yourname, .shots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(204, 204, 204, 0.5);;
+    height: 40px;
+    width: 200px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 20%;
+}

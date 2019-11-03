@@ -1,0 +1,69 @@
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+    background: black;
+    color: orangered;
+    transform: translate(50%, 50%);
+    clip-path: polygon(30% 11%, 17% 25%, 46% 3%, 54% 16%, 78% 7%, 79% 19%, 96% 25%, 89% 35%, 95% 46%, 92% 61%, 77% 68%, 95% 79%, 89% 89%, 65% 85%, 68% 97%, 50% 93%, 29% 82%, 21% 90%, 13% 74%, 2% 62%, 9% 43%, 8% 22%, 16% 33%, 22% 15%, 38% 3%, 37% 10%, 29% 97%, 33% 100%, 26% 98%);
+    -webkit-box-shadow: inset -60px 39px 35px 2px #38352d;
+    -moz-box-shadow: inset -60px 39px 35px 2px #38352d;
+    box-shadow: inset -60px 39px 35px 2px #38352d;
+    border-radius: 20%;
+    .insertyourname {
+        font-size: 30px;
+        text-transform: uppercase;
+        border: 3px solid orange;
+        padding: 10px;
+        text-align: center;
+        text-shadow: -0.5px 1.5px #000000, 0.5px 1.5px white;
+        color: #bb7b94;
+        clip-path: polygon(16% 6%, 2% 20%, 6% 41%, 6% 65%, 9% 96%, 21% 83%, 39% 93%, 47% 78%, 61% 90%, 66% 99%, 78% 80%, 87% 100%, 100% 84%, 96% 56%, 97% 30%, 89% 11%, 68% 4%, 58% 22%, 46% 10%, 31% 13%, 30% 3%);
+        &:hover {
+            clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+        }
+    }
+    .startButton {
+        border: none;
+        width: 200px;
+        height: 50px;
+        background: #ffb42e;
+        font-size: 26px;
+        text-transform: uppercase;
+        &:hover {
+            border-top: 2px dashed white;
+            border-bottom: 2px dashed white;
+            background: darken(#ffb42e, 20);
+            clip-path: polygon(16% 6%, 2% 20%, 6% 41%, 6% 65%, 9% 96%, 21% 83%, 39% 93%, 47% 78%, 61% 90%, 66% 99%, 78% 80%, 87% 100%, 100% 84%, 96% 56%, 97% 30%, 89% 11%, 68% 4%, 58% 22%, 46% 10%, 31% 13%, 30% 3%);
+
+        }
+        &:active {
+            background: lighten(#ffb42e, 20);
+        }
+    }
+    input {
+        border: none;
+    margin: 0 auto 20px auto;
+        width: 240px;
+        height: 40px;
+        background: #ffb42e;
+        color: black;
+        text-align: center;
+        font-size: 18px;
+        clip-path: polygon(86% 97%, 89% 88%, 94% 61%, 99% 90%, 95% 47%, 83% 43%, 92% 19%, 96% 38%, 89% 15%, 71% 21%, 75% 21%, 77% 14%, 56% 19%, 60% 28%, 65% 5%, 33% 13%, 35% 3%, 41% 29%, 49% 15%, 38% 2%, 3% 23%, 14% 9%, 8% 4%, 5% 40%, 13% 62%, 5% 60%, 4% 80%, 8% 86%, 22% 82%, 22% 92%, 23% 100%, 31% 86%, 36% 92%, 40% 100%, 57% 100%, 48% 84%, 62% 82%, 74% 94%, 81% 83%, 69% 93%, 95% 89%);
+
+        &::placeholder {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    label {
+        display: none;
+    }
+    .aboutmusic {
+        text-align: center;
+    }
+}

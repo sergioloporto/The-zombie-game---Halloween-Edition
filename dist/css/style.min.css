@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+}
+
+.zombie {
+  width: 200px;
+  height: 312px;
+  /*border: 1px solid red;*/
+  background: url("../images/walkingdead.png");
+  position: absolute;
+  left: calc(100% + 100px);
+  bottom: 20px;
+  -webkit-animation: move 1s 0s infinite steps(9), walk 15s 0s 1 linear forwards;
+          animation: move 1s 0s infinite steps(9), walk 15s 0s 1 linear forwards;
+}
+
+@-webkit-keyframes move {
+  100% {
+    background-position-x: -1800px;
+  }
+}
+
+@keyframes move {
+  100% {
+    background-position-x: -1800px;
+  }
+}
+
+@-webkit-keyframes walk {
+  100% {
+    left: -300px;
+  }
+}
+
+@keyframes walk {
+  100% {
+    left: -300px;
+  }
+}
+
+.board {
+  height: 100vh;
+  min-height: 800px;
+  position: relative;
+  overflow: hidden;
+  background: black;
+  background-image: url(../images/board-bg.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  cursor: none;
+}
+
+.cross {
+  width: 200px;
+  height: 200px;
+  border: 20px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.cross::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: white;
+  display: block;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.min.css.map */

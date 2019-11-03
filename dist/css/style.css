@@ -1,0 +1,213 @@
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 50vh;
+  background: black;
+  color: orangered;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  -webkit-clip-path: polygon(30% 11%, 17% 25%, 46% 3%, 54% 16%, 78% 7%, 79% 19%, 96% 25%, 89% 35%, 95% 46%, 92% 61%, 77% 68%, 95% 79%, 89% 89%, 65% 85%, 68% 97%, 50% 93%, 29% 82%, 21% 90%, 13% 74%, 2% 62%, 9% 43%, 8% 22%, 16% 33%, 22% 15%, 38% 3%, 37% 10%, 29% 97%, 33% 100%, 26% 98%);
+          clip-path: polygon(30% 11%, 17% 25%, 46% 3%, 54% 16%, 78% 7%, 79% 19%, 96% 25%, 89% 35%, 95% 46%, 92% 61%, 77% 68%, 95% 79%, 89% 89%, 65% 85%, 68% 97%, 50% 93%, 29% 82%, 21% 90%, 13% 74%, 2% 62%, 9% 43%, 8% 22%, 16% 33%, 22% 15%, 38% 3%, 37% 10%, 29% 97%, 33% 100%, 26% 98%);
+  box-shadow: inset -60px 39px 35px 2px #38352d;
+  border-radius: 20%;
+}
+
+.login-box .insertyourname {
+  font-size: 30px;
+  text-transform: uppercase;
+  border: 3px solid orange;
+  padding: 10px;
+  text-align: center;
+  text-shadow: -0.5px 1.5px #000000, 0.5px 1.5px white;
+  color: #bb7b94;
+  -webkit-clip-path: polygon(16% 6%, 2% 20%, 6% 41%, 6% 65%, 9% 96%, 21% 83%, 39% 93%, 47% 78%, 61% 90%, 66% 99%, 78% 80%, 87% 100%, 100% 84%, 96% 56%, 97% 30%, 89% 11%, 68% 4%, 58% 22%, 46% 10%, 31% 13%, 30% 3%);
+          clip-path: polygon(16% 6%, 2% 20%, 6% 41%, 6% 65%, 9% 96%, 21% 83%, 39% 93%, 47% 78%, 61% 90%, 66% 99%, 78% 80%, 87% 100%, 100% 84%, 96% 56%, 97% 30%, 89% 11%, 68% 4%, 58% 22%, 46% 10%, 31% 13%, 30% 3%);
+}
+
+.login-box .insertyourname:hover {
+  -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+          clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+.login-box .startButton {
+  border: none;
+  width: 200px;
+  height: 50px;
+  background: #ffb42e;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.login-box .startButton:hover {
+  border-top: 2px dashed white;
+  border-bottom: 2px dashed white;
+  background: #c78000;
+  -webkit-clip-path: polygon(16% 6%, 2% 20%, 6% 41%, 6% 65%, 9% 96%, 21% 83%, 39% 93%, 47% 78%, 61% 90%, 66% 99%, 78% 80%, 87% 100%, 100% 84%, 96% 56%, 97% 30%, 89% 11%, 68% 4%, 58% 22%, 46% 10%, 31% 13%, 30% 3%);
+          clip-path: polygon(16% 6%, 2% 20%, 6% 41%, 6% 65%, 9% 96%, 21% 83%, 39% 93%, 47% 78%, 61% 90%, 66% 99%, 78% 80%, 87% 100%, 100% 84%, 96% 56%, 97% 30%, 89% 11%, 68% 4%, 58% 22%, 46% 10%, 31% 13%, 30% 3%);
+}
+
+.login-box .startButton:active {
+  background: #ffd994;
+}
+
+.login-box input {
+  border: none;
+  margin: 0 auto 20px auto;
+  width: 240px;
+  height: 40px;
+  background: #ffb42e;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  -webkit-clip-path: polygon(86% 97%, 89% 88%, 94% 61%, 99% 90%, 95% 47%, 83% 43%, 92% 19%, 96% 38%, 89% 15%, 71% 21%, 75% 21%, 77% 14%, 56% 19%, 60% 28%, 65% 5%, 33% 13%, 35% 3%, 41% 29%, 49% 15%, 38% 2%, 3% 23%, 14% 9%, 8% 4%, 5% 40%, 13% 62%, 5% 60%, 4% 80%, 8% 86%, 22% 82%, 22% 92%, 23% 100%, 31% 86%, 36% 92%, 40% 100%, 57% 100%, 48% 84%, 62% 82%, 74% 94%, 81% 83%, 69% 93%, 95% 89%);
+          clip-path: polygon(86% 97%, 89% 88%, 94% 61%, 99% 90%, 95% 47%, 83% 43%, 92% 19%, 96% 38%, 89% 15%, 71% 21%, 75% 21%, 77% 14%, 56% 19%, 60% 28%, 65% 5%, 33% 13%, 35% 3%, 41% 29%, 49% 15%, 38% 2%, 3% 23%, 14% 9%, 8% 4%, 5% 40%, 13% 62%, 5% 60%, 4% 80%, 8% 86%, 22% 82%, 22% 92%, 23% 100%, 31% 86%, 36% 92%, 40% 100%, 57% 100%, 48% 84%, 62% 82%, 74% 94%, 81% 83%, 69% 93%, 95% 89%);
+}
+
+.login-box input::-webkit-input-placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+
+.login-box input::-moz-placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+
+.login-box input:-ms-input-placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+
+.login-box input::-ms-input-placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+
+.login-box input::placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+
+.login-box label {
+  display: none;
+}
+
+.login-box .aboutmusic {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+.zombie {
+  width: 200px;
+  height: 312px;
+  /*border: 1px solid red;*/
+  background: url("../images/walkingdead.png");
+  /* From https://wdrfree.com/97/css3-animation-loop-sprite-with-keyframes - couldn't find the original author for credits */
+  position: absolute;
+  left: calc(100% + 100px);
+  bottom: 20px;
+  -webkit-animation: move 1s 0s infinite steps(9), walk 15s 0s 1 linear forwards;
+          animation: move 1s 0s infinite steps(9), walk 15s 0s 1 linear forwards;
+}
+
+@-webkit-keyframes move {
+  100% {
+    background-position-x: -1800px;
+  }
+}
+
+@keyframes move {
+  100% {
+    background-position-x: -1800px;
+  }
+}
+
+@-webkit-keyframes walk {
+  100% {
+    left: -300px;
+  }
+}
+
+@keyframes walk {
+  100% {
+    left: -300px;
+  }
+}
+
+.board {
+  height: 100vh;
+  min-height: 800px;
+  position: relative;
+  overflow: hidden;
+  background: black;
+  background-image: url(../images/board-bg.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  cursor: none;
+}
+
+.cross {
+  width: 200px;
+  height: 200px;
+  border: 20px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.cross::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: white;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.cross::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent 45%, #d00 35%, #d00 55%, transparent 55%), linear-gradient(to right, transparent 45%, #d00 35%, #d00 55%, transparent 55%);
+  position: absolute;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .header__container {
+  display: flex;
+  margin-top: 5px;
+}
+
+.level, .yourname, .shots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(204, 204, 204, 0.5);
+  height: 40px;
+  width: 200px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 20%;
+}
+
+/*# sourceMappingURL=style.css.map */
