@@ -22,10 +22,7 @@ function playShootingSound(volume) {
 ////////////////////////////////////////////////////////////
 //Get the cursor position and assign it to the viewfinder//
 ///////////////////////////////////////////////////////////
-board.addEventListener('mousemove', function (e) {
-    cross.style.left = `${e.pageX}px`;
-    cross.style.top = `${e.pageY}px`;
-});
+
 
 
 ///////////////////////////////////////////////////////
@@ -38,6 +35,7 @@ function login() {
         e.preventDefault();
         loginBox.style.display = "none"; // The login box will disappear during the game
         loginBox.style.pointerEvents = "none"; // The pointer Events also must be disabled
+        board.style.cursor = "none";
 
 
         /////  Check if the user is logged in. If the user is logged in, write the name in the header.
@@ -46,6 +44,12 @@ function login() {
             localStorage.setItem('zombiegameSavedName', yourName);
             if (localStorage.getItem("zombiegameSavedName") != null) {
                 navbarNameField.innerText = `Player 1: ${localStorage.zombiegameSavedName}`;
+
+                board.addEventListener('mousemove', function (e) {
+                    cross.style.left = `${e.pageX}px`;
+                    cross.style.top = `${e.pageY}px`;
+                });
+
 
 
                 ///// Play sound on shoot

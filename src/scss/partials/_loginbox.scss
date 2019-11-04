@@ -20,6 +20,7 @@
         padding: 10px;
         text-align: center;
         text-shadow: -0.5px 1.5px #000000, 0.5px 1.5px white;
+        cursor: default;
         color: #bb7b94;
         clip-path: polygon(16% 6%, 2% 20%, 6% 41%, 6% 65%, 9% 96%, 21% 83%, 39% 93%, 47% 78%, 61% 90%, 66% 99%, 78% 80%, 87% 100%, 100% 84%, 96% 56%, 97% 30%, 89% 11%, 68% 4%, 58% 22%, 46% 10%, 31% 13%, 30% 3%);
         &:hover {
@@ -33,6 +34,7 @@
         background: #ffb42e;
         font-size: 26px;
         text-transform: uppercase;
+        cursor: pointer;
         &:hover {
             border-top: 2px dashed white;
             border-bottom: 2px dashed white;
@@ -48,7 +50,7 @@
         border: none;
     margin: 0 auto 20px auto;
         width: 240px;
-        height: 40px;
+        height: 60px;
         background: #ffb42e;
         color: black;
         text-align: center;
@@ -58,6 +60,7 @@
         &::placeholder {
             font-size: 18px;
             text-align: center;
+            color: #38352d;
         }
     }
     label {
