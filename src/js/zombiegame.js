@@ -22,7 +22,7 @@ export function zombieGame() {
 
 
     ////// Create a zombie on each interval
-    setInterval(function () {
+    setInterval(() => {
 
         ////// Create a div with a zombie
         const zombie = document.createElement("div");
@@ -81,13 +81,13 @@ export function zombieGame() {
     ///////////////////////////////////////////////////////////
     // SHOTS Counter
     ////////////////////////////Count the shots////////////////
-    function countTheShots() {
+    const countTheShots = () => {
         const shotsNumber = document.querySelector('.shots');
         shotsNumber.innerText = `${killed}/${shotsCounter}`;
         window.addEventListener('click', function () {
             shotsCounter++;
             shotsNumber.innerText = `killed ${killed}/${shotsCounter} total`;
         });
-    }
+    };
     countTheShots();
 }

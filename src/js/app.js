@@ -13,11 +13,11 @@ let shootSound = new Audio("sounds/380_gunshot_single-mike-koenig.mp3"); // Lice
 shootSound.preload = 'auto';
 shootSound.load();
 
-function playShootingSound(volume) {
+const playShootingSound = volume => {
     var click = shootSound.cloneNode();
     click.volume = volume;
     click.play();
-}
+};
 
 ////////////////////////////////////////////////////////////
 //Get the cursor position and assign it to the viewfinder//
@@ -28,7 +28,7 @@ function playShootingSound(volume) {
 ///////////////////////////////////////////////////////
 ////////////       The login box              /////////
 ///////////////////////////////////////////////////////
-function login() {
+const login = () => {
     const loginBox = document.querySelector('.login-box');
     const playBtn = document.querySelector('.startButton');
     playBtn.addEventListener('click', function (e) {
@@ -39,7 +39,7 @@ function login() {
 
 
         /////  Check if the user is logged in. If the user is logged in, write the name in the header.
-        function checkIfLoggedin() {
+        const checkIfLoggedin = () => {
             const yourName = document.getElementById('name').value;
             localStorage.setItem('zombiegameSavedName', yourName);
             if (localStorage.getItem("zombiegameSavedName") != null) {
@@ -57,7 +57,7 @@ function login() {
                     playShootingSound(0.5);
                 });
             }
-        }
+        };
 
         // Always run the function to check if the user is logged in.
         // If the user logged in once and then reloads the page, has to log in once again,
@@ -71,17 +71,17 @@ function login() {
         zombieSound.preload = 'auto';
         zombieSound.load();
 
-        function playZombieSound(volumeValue) {
+        const playZombieSound = volumeValue => {
             var backgroundZombieSound = zombieSound.cloneNode();
             backgroundZombieSound.volume = volumeValue;
             backgroundZombieSound.play();
-        }
+        };
         playZombieSound(1);
 
         ///// Start the game - Level 1
         zombieGame();
     })
-}
+};
 
 //// Start the login function, which in turn will start the Level one in case the player clicks on "Play"
 login();
